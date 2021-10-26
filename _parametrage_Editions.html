@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مكتبة المسجد دور النشر</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-chosen.css" rel="stylesheet">
+    <link href="css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="css/datatables.min.css" rel="stylesheet">
+<style type="text/css">
+    .chosen-container .chosen-drop{
+
+        left: 9000px;
+    }
+
+</style>
+
+</head>
+
+<body class="rtls">
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="mailbox.html">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                     <li>
+                    <a href="_parametrage_Pays.html"><i class="fa fa-th-large"></i> <span class="nav-label">البلدان</span> <span class="fa arrow"></span></a>
+                    
+                </li>
+                  <li>
+                    <a href="_parametrage_Editions.html"><i class="fa fa-th-large"></i> <span class="nav-label">دور النشر</span> <span class="fa arrow"></span></a>
+                    
+                </li>
+                <li>
+                    <a href="_parametrage_Armoires.html"><i class="fa fa-th-large"></i> <span class="nav-label">الخزانات</span> <span class="fa arrow"></span></a>
+                    
+                </li>
+                   <li>
+                    <a href="_parametrage_Ecrivants.html"><i class="fa fa-th-large"></i> <span class="nav-label">المؤلفين و المحققين</span> <span class="fa arrow"></span></a>
+                    
+                </li>
+             
+                
+             
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        
+        </div>
+            
+        <div class="wrapper wrapper-content animated fadeInRight">
+            
+            <div class="row">
+<!-- ____________________ ajouter depuis un modal-->
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                          <h2>دور النشر <h3>(القائمة | الإضافة | التعديل | الحذف)</h3>  </h2>
+                       
+                        </div>
+                        <div class="ibox-content">
+                            <div class="text-center">
+                            <a data-toggle="modal" class="btn btn-primary" href="#modal-form">
+                            <h2>إضافة دار نشر</h2>
+                            </a>
+                            </div>
+                            <div id="modal-form" class="modal " >
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div><h3>إضافة دار نشر الى قائمة دور النشر</h3>
+
+                                                   
+ 
+                                   
+                                   
+                                   
+
+                                     <div style="height: 37px; margin-bottom: 24px;font-size: 17px">
+                                      <label class="col-sm-4 control-label" >إسم دار النشر :</label>
+                                    <div class="col-sm-12">
+                                    <input type="text" class="form-control">
+                                    </div>
+                                    </div>
+
+                                  <div style="height: 37px; margin-bottom: 24px;font-size: 17px">
+                                      <label class="col-sm-4 control-label" >إسم البلد :</label>
+                                    <div class="col-sm-12"> 
+                                   <select  class="chosen-select" style="width:350px;" tabindex="4" >
+                                    <option value="United States">الجزائر</option>
+                                    <option value="United Kingdom">الهند</option>
+                                    <option value="Afghanistan">مصر</option>
+                                    <option value="Aland Islands">تونس</option>
+                                    <option value="Albania">المغرب</option>
+                                    <option value="Algeria">أمريكا</option>
+									<option value="3">السعودية</option>
+                                                                
+                                                                    <option value="4">شمال السودان</option>
+                                                                
+                                                                    <option value="6">&nbsp;إثيوبيا</option>
+                                                                
+                                                                    <option value="8">&nbsp;أرمينيا</option>
+                                                                
+                                                                    <option value="9">&nbsp;أروبا (هولندا)</option>
+                                                                
+                                                                    <option value="10">&nbsp;إريتريا</option>
+                                                                
+                                                                    <option value="11">&nbsp;إسبانيا</option>
+                                                                
+                                                                    <option value="12">&nbsp;أستراليا</option>
+                                                                
+                                                                    <option value="13">&nbsp;إستونيا</option>
+                                                                
+                                                                    <option value="14">&nbsp;أفغانستان</option>
+                                                                
+                                                                    <option value="15">&nbsp;الأرجنتين</option>
+                                                                
+                                                                    <option value="16">&nbsp;الأردن</option>
+                                                                
+                                                                    <option value="17">&nbsp;الإكوادور</option>
+                                                                
+                                                                    <option value="18">&nbsp;الإمارات</option>
+                                                                
+                                                                    <option value="19">&nbsp;ألبانيا</option>
+                                                                
+                                                                    <option value="20">&nbsp;البحرين</option>
+                                                                
+                                                                    <option value="21">&nbsp;البرازيل</option>
+                                                                
+                                                                    <option value="22">&nbsp;البرتغال</option>
+                                                                
+                                                                    <option value="23">&nbsp;البهاما</option>
+                                                                
+                                                                    <option value="24">&nbsp;البوسنة والهرسك</option>
+                                                                
+                                                                    <option value="25">&nbsp;التشيك</option>
+                                                                
+                                                                    <option value="26">&nbsp;الجبل الأسود</option>
+                                                                
+                                                                    <option value="28">&nbsp;الجزر العذراء البريطانية (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="29">&nbsp;الجزر الكاريبية الهولندية (هولندا)</option>
+                                                                
+                                                                    <option value="30">&nbsp;الدنمارك</option>
+                                                                
+                                                                    <option value="31">&nbsp;الرأس الأخضر</option>
+                                                                
+                                                                    <option value="33">&nbsp;السلفادور</option>
+                                                                
+                                                                    <option value="34">&nbsp;السنغال</option>
+                                                                
+                                                                    <option value="36">&nbsp;السويد</option>
+                                                                
+                                                                    <option value="37">&nbsp;الصحراء الغربية</option>
+                                                                
+                                                                    <option value="38">&nbsp;الصومال</option>
+                                                                
+                                                                    <option value="39">&nbsp;الصين</option>
+                                                                
+                                                                    <option value="40">&nbsp;العراق</option>
+                                                                
+                                                                    <option value="41">&nbsp;الغابون</option>
+                                                                
+                                                                    <option value="42">&nbsp;الفاتيكان</option>
+                                                                
+                                                                    <option value="43">&nbsp;الفلبين</option>
+                                                                
+                                                                    <option value="44">&nbsp;الكاميرون</option>
+                                                                
+                                                                    <option value="45">&nbsp;الكويت</option>
+                                                                
+                                                                    <option value="46">&nbsp;ألمانيا</option>
+                                                                
+                                                                    <option value="47">&nbsp;المجر</option>
+                                                                
+                                                                    <option value="48">&nbsp;المغرب</option>
+                                                                
+                                                                    <option value="49">&nbsp;المكسيك</option>
+                                                                
+                                                                    <option value="50">&nbsp;المملكة المتحدة</option>
+                                                                
+                                                                    <option value="51">&nbsp;النرويج</option>
+                                                                
+                                                                    <option value="52">&nbsp;النمسا</option>
+                                                                
+                                                                    <option value="53">&nbsp;النيجر</option>
+                                                                
+                                                                    <option value="54">&nbsp;الهند</option>
+                                                                
+                                                                    <option value="55">&nbsp;الولايات المتحدة</option>
+                                                                
+                                                                    <option value="56">&nbsp;اليابان</option>
+                                                                
+                                                                    <option value="57">&nbsp;اليمن</option>
+                                                                
+                                                                    <option value="58">&nbsp;اليونان</option>
+                                                                
+                                                                    <option value="59">&nbsp;أنتيغوا وباربودا</option>
+                                                                
+                                                                    <option value="60">&nbsp;أنجويلا (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="61">&nbsp;أندورا</option>
+                                                                
+                                                                    <option value="62">&nbsp;إندونيسيا</option>
+                                                                
+                                                                    <option value="63">&nbsp;أنغولا</option>
+                                                                
+                                                                    <option value="64">&nbsp;أوروغواي</option>
+                                                                
+                                                                    <option value="65">&nbsp;أوزبكستان</option>
+                                                                
+                                                                    <option value="66">&nbsp;أوغندا</option>
+                                                                
+                                                                    <option value="67">&nbsp;أوكرانيا</option>
+                                                                
+                                                                    <option value="68">&nbsp;أولند</option>
+                                                                
+                                                                    <option value="69">&nbsp;إيران</option>
+                                                                
+                                                                    <option value="71">&nbsp;إيطاليا</option>
+                                                                
+                                                                    <option value="72">&nbsp;بابوا غينيا الجديدة</option>
+                                                                
+                                                                    <option value="73">&nbsp;باراغواي</option>
+                                                                
+                                                                    <option value="74">&nbsp;باربادوس</option>
+                                                                
+                                                                    <option value="75">&nbsp;باكستان</option>
+                                                                
+                                                                    <option value="76">&nbsp;بالاو</option>
+                                                                
+                                                                    <option value="77">&nbsp;برمودا (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="78">&nbsp;بروناي</option>
+                                                                
+                                                                    <option value="79">&nbsp;بلجيكا</option>
+                                                                
+                                                                    <option value="80">&nbsp;بلغاريا</option>
+                                                                
+                                                                    <option value="81">&nbsp;بليز</option>
+                                                                
+                                                                    <option value="82">&nbsp;بنغلاديش</option>
+                                                                
+                                                                    <option value="83">&nbsp;بنما</option>
+                                                                
+                                                                    <option value="84">&nbsp;بنين</option>
+                                                                
+                                                                    <option value="85">&nbsp;بوتان</option>
+                                                                
+                                                                    <option value="86">&nbsp;بوتسوانا</option>
+                                                                
+                                                                    <option value="87">&nbsp;بورتوريكو (الولايات المتحدة)</option>
+                                                                
+                                                                    <option value="88">&nbsp;بوركينا فاسو</option>
+                                                                
+                                                                    <option value="89">&nbsp;بوروندي</option>
+                                                                
+                                                                    <option value="90">&nbsp;بولندا</option>
+                                                                
+                                                                    <option value="91">&nbsp;بوليفيا</option>
+                                                                
+                                                                    <option value="92">&nbsp;بولينزيا الفرنسية (فرنسا)</option>
+                                                                
+                                                                    <option value="93">&nbsp;بيرو</option>
+                                                                
+                                                                    <option value="94">&nbsp;بيلاروسيا</option>
+                                                                
+                                                                    <option value="95">&nbsp;تايلاند</option>
+                                                                
+                                                                    <option value="96">&nbsp;تايوان</option>
+                                                                
+                                                                    <option value="97">&nbsp;تركمانستان</option>
+                                                                
+                                                                    <option value="98">&nbsp;تركيا</option>
+                                                                
+                                                                    <option value="99">&nbsp;ترينيداد وتوباغو</option>
+                                                                
+                                                                    <option value="100">&nbsp;تشاد</option>
+                                                                
+                                                                    <option value="101">&nbsp;تشيلي</option>
+                                                                
+                                                                    <option value="102">&nbsp;تنزانيا</option>
+                                                                
+                                                                    <option value="103">&nbsp;توغو</option>
+                                                                
+                                                                    <option value="104">&nbsp;توكلو (نيوزيلندا)</option>
+                                                                
+                                                                    <option value="105">&nbsp;تونجا</option>
+                                                                
+                                                                    <option value="106">&nbsp;تونس</option>
+                                                                
+                                                                    <option value="107">&nbsp;تيمور الشرقية</option>
+                                                                
+                                                                    <option value="108">&nbsp;جامايكا</option>
+                                                                
+                                                                    <option value="109">&nbsp;جبل طارق (منطقة حكم ذاتي) (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="110">&nbsp;جرينادا</option>
+                                                                
+                                                                    <option value="111">&nbsp;جرينلاند (الدنمارك)</option>
+                                                                
+                                                                    <option value="112">&nbsp;جزر العذراء الأمريكية (الولايات المتحدة)</option>
+                                                                
+                                                                    <option value="113">&nbsp;جزر القمر</option>
+                                                                
+                                                                    <option value="114">&nbsp;جزر المالديف</option>
+                                                                
+                                                                    <option value="115">&nbsp;جزر بيتكيرن (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="116">&nbsp;جزر فارو (الدنمارك)</option>
+                                                                
+                                                                    <option value="117">&nbsp;جزر فوكلاند (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="118">&nbsp;جزر كايمان (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="119">&nbsp;جزر كوك (نيوزيلندا)</option>
+                                                                
+                                                                    <option value="120">&nbsp;جزر كوكس (أستراليا)</option>
+                                                                
+                                                                    <option value="121">&nbsp;جزر مارشال</option>
+                                                                
+                                                                    <option value="122">&nbsp;جزر ماريانا الشمالية (الولايات المتحدة)</option>
+                                                                
+                                                                    <option value="123">&nbsp;جزيرة عيد الميلاد (أستراليا)</option>
+                                                                
+                                                                    <option value="124">&nbsp;جزيرة مان (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="125">&nbsp;جزيرة نورفولك (أستراليا)</option>
+                                                                
+                                                                    <option value="126">&nbsp;جمهورية أفريقيا الوسطى</option>
+                                                                
+                                                                    <option value="127">&nbsp;جمهورية الدومينيكان</option>
+                                                                
+                                                                    <option value="128">&nbsp;جمهورية الكونغو</option>
+                                                                
+                                                                    <option value="129">&nbsp;جمهورية الكونغو الديمقراطية</option>
+                                                                
+                                                                    <option value="130">&nbsp;جمهورية أيرلندا</option>
+                                                                
+                                                                    <option value="131">&nbsp;جمهورية مقدونيا</option>
+                                                                
+                                                                    <option value="132">&nbsp;جنوب أفريقيا</option>
+                                                                
+                                                                    <option value="133">&nbsp;جنوب السودان</option>
+                                                                
+                                                                    <option value="134">&nbsp;جوادلوب (فرنسا)</option>
+                                                                
+                                                                    <option value="135">&nbsp;جورجيا</option>
+                                                                
+                                                                    <option value="136">&nbsp;جيبوتي</option>
+                                                                
+                                                                    <option value="137">&nbsp;جيرزي (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="138">&nbsp;جيرنزي (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="139">&nbsp;دومينيكا</option>
+                                                                
+                                                                    <option value="140">&nbsp;رواندا</option>
+                                                                
+                                                                    <option value="141">&nbsp;روسيا</option>
+                                                                
+                                                                    <option value="142">&nbsp;رومانيا</option>
+                                                                
+                                                                    <option value="143">&nbsp;ريونيون (فرنسا)</option>
+                                                                
+                                                                    <option value="144">&nbsp;زامبيا</option>
+                                                                
+                                                                    <option value="145">&nbsp;زيمبابوي</option>
+                                                                
+                                                                    <option value="146">&nbsp;ساحل العاج</option>
+                                                                
+                                                                    <option value="147">&nbsp;ساموا</option>
+                                                                
+                                                                    <option value="148">&nbsp;ساموا الأمريكية (الولايات المتحدة)</option>
+                                                                
+                                                                    <option value="149">&nbsp;سان بارتليمي (فرنسا)</option>
+                                                                
+                                                                    <option value="150">&nbsp;سان بيار وميكلون (فرنسا)</option>
+                                                                
+                                                                    <option value="151">&nbsp;سان مارينو</option>
+                                                                
+                                                                    <option value="152">&nbsp;سانت فنسنت والجرينادين</option>
+                                                                
+                                                                    <option value="153">&nbsp;سانت لوسيا</option>
+                                                                
+                                                                    <option value="154">&nbsp;سانت مارتن الفرنسية (فرنسا)</option>
+                                                                
+                                                                    <option value="155">&nbsp;سانت هيلين (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="156">&nbsp;ساو تومي وبرينسيب</option>
+                                                                
+                                                                    <option value="157">&nbsp;سريلانكا</option>
+                                                                
+                                                                    <option value="158">&nbsp;سفالبارد ويان ماين (النرويج)</option>
+                                                                
+                                                                    <option value="159">&nbsp;سلطنة عمان</option>
+                                                                
+                                                                    <option value="160">&nbsp;سلوفاكيا</option>
+                                                                
+                                                                    <option value="161">&nbsp;سلوفينيا</option>
+                                                                
+                                                                    <option value="162">&nbsp;سنغافورة</option>
+                                                                
+                                                                    <option value="163">&nbsp;سوازيلاند</option>
+                                                                
+                                                                    <option value="164">&nbsp;سوريا</option>
+                                                                
+                                                                    <option value="165">&nbsp;سورينام</option>
+                                                                
+                                                                    <option value="166">&nbsp;سويسرا</option>
+                                                                
+                                                                    <option value="167">&nbsp;سيراليون</option>
+                                                                
+                                                                    <option value="168">&nbsp;سيشيل</option>
+                                                                
+                                                                    <option value="169">&nbsp;سينت مارتن (هولندا)</option>
+                                                                
+                                                                    <option value="170">&nbsp;صربيا</option>
+                                                                
+                                                                    <option value="171">&nbsp;طاجيكستان</option>
+                                                                
+                                                                    <option value="172">&nbsp;غامبيا</option>
+                                                                
+                                                                    <option value="173">&nbsp;غانا</option>
+                                                                
+                                                                    <option value="174">&nbsp;غواتيمالا</option>
+                                                                
+                                                                    <option value="175">&nbsp;غوام (الولايات المتحدة)</option>
+                                                                
+                                                                    <option value="176">&nbsp;غويانا</option>
+                                                                
+                                                                    <option value="177">&nbsp;غويانا الفرنسية (فرنسا)</option>
+                                                                
+                                                                    <option value="178">&nbsp;غينيا</option>
+                                                                
+                                                                    <option value="179">&nbsp;غينيا الاستوائية</option>
+                                                                
+                                                                    <option value="180">&nbsp;غينيا بيساو</option>
+                                                                
+                                                                    <option value="181">&nbsp;فانواتو</option>
+                                                                
+                                                                    <option value="182">&nbsp;فرنسا</option>
+                                                                
+                                                                    <option value="183">&nbsp;فلسطين Authority</option>
+                                                                
+                                                                    <option value="184">&nbsp;فنزويلا</option>
+                                                                
+                                                                    <option value="185">&nbsp;فنلندا</option>
+                                                                
+                                                                    <option value="186">&nbsp;فيتنام</option>
+                                                                
+                                                                    <option value="187">&nbsp;فيجي</option>
+                                                                
+                                                                    <option value="188">&nbsp;قبرص</option>
+                                                                
+                                                                    <option value="189">&nbsp;قرغيزستان</option>
+                                                                
+                                                                    <option value="190">&nbsp;قطر</option>
+                                                                
+                                                                    <option value="191">&nbsp;كازاخستان</option>
+                                                                
+                                                                    <option value="192">&nbsp;كاليدونيا الجديدة (فرنسا)</option>
+                                                                
+                                                                    <option value="193">&nbsp;كرواتيا</option>
+                                                                
+                                                                    <option value="194">&nbsp;كندا</option>
+                                                                
+                                                                    <option value="195">&nbsp;كوبا</option>
+                                                                
+                                                                    <option value="196">&nbsp;كوراساو (هولندا)</option>
+                                                                
+                                                                    <option value="197">&nbsp;كوريا الجنوبية</option>
+                                                                
+                                                                    <option value="198">&nbsp;كوريا الشمالية</option>
+                                                                
+                                                                    <option value="199">&nbsp;كوستاريكا</option>
+                                                                
+                                                                    <option value="200">&nbsp;كولومبيا</option>
+                                                                
+                                                                    <option value="201">&nbsp;كيريباتي</option>
+                                                                
+                                                                    <option value="202">&nbsp;كينيا</option>
+                                                                
+                                                                    <option value="203">&nbsp;لاتفيا</option>
+                                                                
+                                                                    <option value="204">&nbsp;لاوس</option>
+                                                                
+                                                                    <option value="205">&nbsp;لبنان</option>
+                                                                
+                                                                    <option value="206">&nbsp;لوكسمبورغ</option>
+                                                                
+                                                                    <option value="207">&nbsp;ليبيا</option>
+                                                                
+                                                                    <option value="208">&nbsp;ليبيريا</option>
+                                                                
+                                                                    <option value="209">&nbsp;ليتوانيا</option>
+                                                                
+                                                                    <option value="210">&nbsp;ليختنشتاين</option>
+                                                                
+                                                                    <option value="211">&nbsp;ليسوتو</option>
+                                                                
+                                                                    <option value="212">&nbsp;مارتينيك (فرنسا)</option>
+                                                                
+                                                                    <option value="213">&nbsp;ماكاو (الصين)</option>
+                                                                
+                                                                    <option value="214">&nbsp;مالاوي</option>
+                                                                
+                                                                    <option value="215">&nbsp;مالطا</option>
+                                                                
+                                                                    <option value="216">&nbsp;مالي</option>
+                                                                
+                                                                    <option value="217">&nbsp;ماليزيا</option>
+                                                                
+                                                                    <option value="218">&nbsp;مايوت (فرنسا)</option>
+                                                                
+                                                                    <option value="219">&nbsp;مدغشقر</option>
+                                                                
+                                                                    <option value="220">&nbsp;مصر</option>
+                                                                
+                                                                    <option value="221">&nbsp;منغوليا</option>
+                                                                
+                                                                    <option value="222">&nbsp;موريتانيا</option>
+                                                                
+                                                                    <option value="223">&nbsp;موريشيوس</option>
+                                                                
+                                                                    <option value="224">&nbsp;موزمبيق</option>
+                                                                
+                                                                    <option value="225">&nbsp;مولدافيا</option>
+                                                                
+                                                                    <option value="226">&nbsp;موناكو</option>
+                                                                
+                                                                    <option value="227">&nbsp;مونتسرات (المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="228">&nbsp;ناميبيا</option>
+                                                                
+                                                                    <option value="229">&nbsp;ناورو</option>
+                                                                
+                                                                    <option value="230">&nbsp;نيبال</option>
+                                                                
+                                                                    <option value="231">&nbsp;نيجيريا</option>
+                                                                
+                                                                    <option value="232">&nbsp;نيكاراجوا</option>
+                                                                
+                                                                    <option value="233">&nbsp;نيوزيلندا</option>
+                                                                
+                                                                    <option value="234">&nbsp;نييوي (نيوزيلندا)</option>
+                                                                
+                                                                    <option value="235">&nbsp;هايتي</option>
+                                                                
+                                                                    <option value="236">&nbsp;هندوراس</option>
+                                                                
+                                                                    <option value="237">&nbsp;هولندا</option>
+                                                                
+                                                                    <option value="238">&nbsp;هونغ كونغ (الصين)</option>
+                                                                
+                                                                    <option value="239">&nbsp;والس وفوتونا (فرنسا)</option>
+                                                                
+                                                                    <option value="240">&nbsp;ولايات ميكرونيسيا المتحدة</option>
+                                                                
+                                                                    <option value="241">(المملكة المتحدة)</option>
+                                                                
+                                                                    <option value="242">(فنلندا)</option>
+                                                                
+                                                                    <option value="243">بورما</option>
+                                                                
+                                                                    <option value="247">الجزائر</option>
+
+                                    </select>
+                                   
+                                   
+                                    </div>
+                                    </div>
+                                      <div style="height: 37px; margin-bottom: 24px;font-size: 17px;padding: 17px;    margin-right: 33%;">       
+                                    <input class="btn btn-rounded btn-lg btn-success " type="submit" value="أضف">
+                        <button type="button" class="btn btn-lg btn-rounded  btn-default" data-dismiss="modal">غلق</button>
+
+                                </div>
+                                
+                                  </div>
+                                            
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+            
+                           
+                            <div id="modal-form-modifier" class="modal " >
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div><h3>تعديل معلومات دار النشر</h3>
+
+                                             <div style="height: 37px; margin-bottom: 24px;font-size: 17px">
+                                      <label class="col-sm-4 control-label" >إسم دار النشر :</label>
+                                    <div class="col-sm-12">
+                                    <input type="text" class="form-control">
+                                    </div>
+                                    </div>
+
+                                  <div style="height: 37px; margin-bottom: 24px;font-size: 17px">
+                                      <label class="col-sm-4 control-label" >إسم البلد :</label>
+                                    <div class="col-sm-12"> 
+                                   <select  class="chosen-select" style="width:350px;" tabindex="4" >
+                                    <option value="United States">الجزائر</option>
+                                    <option value="United Kingdom">الهند</option>
+                                    <option value="Afghanistan">مصر</option>
+                                    <option value="Aland Islands">تونس</option>
+                                    <option value="Albania">المغرب</option>
+                                    <option value="Algeria">أمريكا</option>
+                                    </select>
+                                   
+                                   
+                                    </div>
+                                    </div>
+                                  
+                                      <div style="height: 37px; margin-bottom: 24px;font-size: 17px;padding: 17px;    margin-right: 33%;">       
+                                    <input class="btn btn-rounded btn-lg btn-success " type="submit" value="تأكيد التعديل">
+                        <button type="button" class="btn btn-lg btn-rounded  btn-default" data-dismiss="modal">غلق</button>
+
+                                </div>
+                                
+                                  </div>
+                                            
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                 
+                           
+                            <div id="modal-form-supprimer" class="modal " >
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div><h3>حذف دار نشر</h3>
+
+                                              <div style="height: 37px; margin-bottom: 24px;font-size: 17px">
+                                      <label class="col-sm-4 control-label" >إسم دار النشر :</label>
+                                    <div class="col-sm-12">
+                                    <input type="text" class="form-control">
+                                    </div>
+                                    </div>
+
+                                  <div style="height: 37px; margin-bottom: 24px;font-size: 17px">
+                                      <label class="col-sm-4 control-label" >إسم البلد :</label>
+                                    <div class="col-sm-12"> 
+                                   <select  class="chosen-select" style="width:350px;" tabindex="4" >
+                                    <option value="United States">الجزائر</option>
+                                    <option value="United Kingdom">الهند</option>
+                                    <option value="Afghanistan">مصر</option>
+                                    <option value="Aland Islands">تونس</option>
+                                    <option value="Albania">المغرب</option>
+                                    <option value="Algeria">أمريكا</option>
+                                    </select>
+                                   
+                                   
+                                    </div>
+                                    </div>
+                                   
+                                      <div style="height: 37px; margin-bottom: 24px;font-size: 17px;padding: 17px;    margin-right: 33%;">       
+                                    <input class="btn btn-rounded btn-lg btn-danger " type="submit" value="تأكيد الحذف">
+                        <button type="button" class="btn btn-lg btn-rounded  btn-default" data-dismiss="modal">غلق</button>
+
+                                </div>
+                                
+                                  </div>
+                                            
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+               
+                <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h3>قائمة دور النشر للبحث |التعديل | الحذف</h3>
+                   
+                    </div>
+                    <div class="ibox-content">
+
+                        <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover dataTables-example" >
+                    <thead>
+                    <tr>
+                    <th>إسم دار النشر</th>
+                        <th>إسم البلد</th>
+                        <th>التعديل</th>
+                        <th>الحذف</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="gradeX">
+                    <td>Trident</td> 
+                        <td>Trident</td> 
+                      <td class="center"><a data-toggle="modal" class="btn btn-warning" href="#modal-form-modifier">التعديل</a>
+                        </td>
+                        <td class="center"><a data-toggle="modal" class="btn btn-danger" href="#modal-form-supprimer">الحذف</a>
+                        </td>
+                    </tr>
+                   <tr class="gradeC">
+                   <td>Trident</td> 
+                        <td>Misc</td>
+                      <td class="center"><a data-toggle="modal" class="btn btn-warning" href="#modal-form-modifier">التعديل</a>
+                        </td>
+                        <td class="center"><a data-toggle="modal" class="btn btn-danger" href="#modal-form-supprimer">الحذف</a>
+                        </td>
+                    </tr>
+                    <tr class="gradeU">
+                    <td>Trident</td> 
+                        <td>Other browsers</td>
+                         <td class="center"><a data-toggle="modal" class="btn btn-warning" href="#modal-form-modifier">التعديل</a>
+                        </td>
+                        <td class="center"><a data-toggle="modal" class="btn btn-danger" href="#modal-form-supprimer">الحذف</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                     <th>إسم دار النشر</th>
+                        <th>إسم البلد</th>
+                        <th>التعديل</th>
+                        <th>الحذف</th>
+                    </tr>
+                    </tfoot>
+                    </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="footer">
+          
+                <strong>Copyright</strong> Islem Kiteb &copy; 2017-2018
+        
+        </div>
+
+        </div>
+        </div>
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.metisMenu.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/chosen.jquery.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <!-- iCheck -->
+    <script src="js/icheck.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.i-checks').iCheck({
+                    checkboxClass: 'icheckbox_square-green',
+                    radioClass: 'iradio_square-green',
+                });
+                $('.chosen-select').chosen({width: "inherit"});
+
+                $('.dataTables-example').DataTable({
+                pageLength: 25,
+                responsive: true,
+                dom: '<"html5buttons"B>lTfgitp',
+                buttons: [
+                    { extend: 'copy'},
+                    
+                    {extend: 'excel', title: 'قائمة دور النشر'},
+                    {extend: 'pdf', title: 'قائمة دور النشر'},
+
+                    {extend: 'print',
+                     customize: function (win){
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
+
+                            $(win.document.body).find('table')
+                                    .addClass('compact')
+                                    .css('font-size', 'inherit');
+                    }
+                    }
+                ]
+
+            });
+            });
+        </script>
+</body>
+
+</html>
